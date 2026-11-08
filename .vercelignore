@@ -1,0 +1,8 @@
+_legacy
+data
+lib
+server.js
+*.pdf
+*.md
+.env*
+node_modules

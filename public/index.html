@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#eef7f2">
+  <meta name="description" content="Dose Dupla - protótipo demonstrativo de gestão de medicamentos, rotina de doses e alerta de interações.">
+  <title>Dose Dupla · Sua rotina de remédios em ordem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235f9d8b'/%3E%3Ctext x='50' y='72' font-size='54' text-anchor='middle'%3E%F0%9F%92%8A%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="palco">
+    <aside class="palco-info" aria-hidden="true">
+      <div class="palco-marca">
+        <span class="palco-logo">💊</span>
+        <strong>Dose Dupla</strong>
+      </div>
+      <h1>Sua rotina de remédios em ordem.</h1>
+      <p>Protótipo demonstrativo que organiza as doses do dia, avisa no horário certo e alerta sobre combinações perigosas entre medicamentos.</p>
+      <ul class="palco-lista">
+        <li><span>⏰</span> Alarmes por turno e confirmação da dose</li>
+        <li><span>⚠️</span> Alerta de interação medicamentosa</li>
+        <li><span>📄</span> Ficha médica em PDF para a consulta</li>
+      </ul>
+      <p class="palco-nota">Demonstração interativa com dados de exemplo · nenhum cadastro necessário</p>
+    </aside>
+
+    <div class="celular" role="group" aria-label="Simulação de celular com o aplicativo Dose Dupla">
+      <div class="celular-tela">
+        <div class="barra-status" aria-hidden="true">
+          <span class="status-hora" id="relogioStatus">--:--</span>
+          <span class="ilha"></span>
+          <span class="status-icones">
+            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="6" width="3" height="5" rx="1"/><rect x="4.5" y="4" width="3" height="7" rx="1"/><rect x="9" y="2" width="3" height="9" rx="1"/><rect x="13.5" y="0" width="3" height="11" rx="1"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.3c2.3 0 4.4.9 6 2.4l-1.3 1.3A6.6 6.6 0 0 0 8 4.3c-1.8 0-3.4.7-4.7 1.7L2 4.7a8.7 8.7 0 0 1 6-2.4Zm0 3.3c1.3 0 2.5.5 3.4 1.3l-1.3 1.3A3 3 0 0 0 8 7.6c-.8 0-1.5.3-2.1.6L4.6 6.9A5 5 0 0 1 8 5.6Zm0 3.2c.5 0 1 .2 1.3.5L8 10.6 6.7 9.3c.3-.3.8-.5 1.3-.5Z"/></svg>
+            <span class="bateria"><i></i></span>
+          </span>
+        </div>
+
+        <header class="app-topo">
+          <div class="app-marca">
+            <span class="app-logo" aria-hidden="true">💊</span>
+            <span class="app-nome">
+              <strong>Dose Dupla</strong>
+              <small id="appSubtitulo">Sua rotina de remédios</small>
+            </span>
+          </div>
+          <button class="conta" id="btnConta" type="button" hidden aria-label="Sobre o protótipo" aria-haspopup="dialog">
+            <span class="conta-avatar" id="contaAvatar" aria-hidden="true">👤</span>
+            <span class="conta-nome" id="contaNome">Sobre</span>
+          </button>
+        </header>
+
+        <main id="conteudo" class="app-conteudo" tabindex="-1"></main>
+
+        <nav class="app-abas" id="appAbas" aria-label="Telas principais" hidden>
+          <button class="aba" type="button" data-tela="rotina"><span aria-hidden="true">🏠</span><small>Rotina</small></button>
+          <button class="aba" type="button" data-tela="cadastro"><span aria-hidden="true">➕</span><small>Cadastrar</small></button>
+          <button class="aba" type="button" data-tela="ficha"><span aria-hidden="true">📄</span><small>Ficha</small></button>
+        </nav>
+
+        <div id="camada" class="camada" hidden></div>
+        <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+        <div class="indicador-casa" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/catalogo.js" defer></script>
+  <script src="/pdf.js" defer></script>
+  <script src="/demo.js" defer></script>
+  <script src="/app.js" defer></script>
+</body>
+</html>

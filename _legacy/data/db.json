@@ -1,0 +1,63 @@
+{
+  "versao": 3,
+  "criadoEm": "2026-11-04T00:37:51.037Z",
+  "sessao": "umw1e1iuyhy",
+  "usuarios": [
+    {
+      "id": "umw1e1b3shv",
+      "nome": "Marlene da Silva",
+      "idade": 72,
+      "perfil": "idoso",
+      "pacienteId": null,
+      "pacienteNome": "Marlene da Silva",
+      "criadoEm": "2026-11-04T00:38:06.712Z",
+      "medicamentos": [
+        {
+          "id": "mmw1e1dsn",
+          "nome": "Ibuprofeno",
+          "principioAtivo": "Ibuprofeno",
+          "dosagem": "600mg",
+          "catalogoId": "ibuprofeno",
+          "classe": "Relação Nacional de Medicamentos do Componente Básico da Assistência Farmacêutica / Sistema musculoesquelético",
+          "apresentacao": "Comprimidos:200,300,400,600 mg.Gotas: 200 mg/ml; Suspensão: 20 mg/ml (100 mg/5 ml), 30 mg/ml, 50 mg/ml, 100 mg/ml",
+          "horarios": [
+            "08:00"
+          ],
+          "inicio": "2026-11-03",
+          "termino": "2026-12-03",
+          "instrucao": "com_comida",
+          "observacoes": "",
+          "receita": null,
+          "criadoEm": "2026-11-04T00:38:10.199Z",
+          "criadoPor": "umw1e1b3shv",
+          "ativo": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "r-mmw1e1dsn-2026-11-03-0800",
+          "medicamentoId": "mmw1e1dsn",
+          "data": "2026-11-03",
+          "horario": "08:00",
+          "status": "tomado",
+          "minutosDeAtraso": 818,
+          "registradoEm": "2026-11-04T00:38:12.221Z",
+          "por": "umw1e1b3shv"
+        }
+      ],
+      "alertas": []
+    },
+    {
+      "id": "umw1e1iuyhy",
+      "nome": "Camila Souza",
+      "idade": null,
+      "perfil": "familiar",
+      "pacienteId": "umw1e1b3shv",
+      "pacienteNome": "Marlene da Silva",
+      "criadoEm": "2026-11-04T00:38:16.762Z",
+      "medicamentos": [],
+      "registros": [],
+      "alertas": []
+    }
+  ]
+}

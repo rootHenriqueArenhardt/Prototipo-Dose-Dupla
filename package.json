@@ -1,0 +1,9 @@
+{
+  "name": "dose-dupla-demo",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Protótipo demonstrativo estático do Dose Dupla, pronto para publicar no Vercel.",
+  "engines": {
+    "node": ">=18"
+  }
+}
